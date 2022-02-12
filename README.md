@@ -30,4 +30,21 @@ In the above Graph, the set of vertices V = {0,1,2,3,4} and the set of edges E =
 The following two are the most commonly used representations of a graph. 
  1. Adjacency Matrix
  2. Adjacency List
+
+## Linked List
+A linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next.
+It is a data structure consisting of a collection of nodes which together represent a sequence.
+(Source: wiki)
+
+There are three types of linked list:
+ 1. Singly linked list
+ 2. Doubly linked List
+ 3. Circular linked list
+
+ ### Singly Linked List
+ A singly linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
+
+ ![alt text](https://github.com/TheAmandeepSingh/Images/blob/main/DataStructures/LinkedList/Linkedlist.png?raw=true)
+
+
 		
