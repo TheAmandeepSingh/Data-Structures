@@ -14,38 +14,38 @@
 #include <iostream>
 using namespace std;
 
-int atoi(const string& str){
-    if(str.length() == 0) return 0;
+int atoi(const string &str)
+{
+    if (str.length() == 0)
+        return 0;
     int mul = 1;
     int num = 0;
-    int len = str.length();
-    while(--len){
-        mul *= 10;
-    }
 
-    for(auto c : str){
+    for (auto c : str)
+    {
         int n = c - '0';
-        if(n < 0 || n > 9) return num/(mul*10);
+        if (n < 0 || n > 9)
+            return num;
 
-        num += mul*n;
-        mul /= 10;
+        num = num * 10 + n;
     }
 
     return num;
 }
 
-int main(){
+int main()
+{
     string s("125");
-    cout<< "Integer value of string '" << s << "': " << atoi(s) << endl; 
-    
+    cout << "Integer value of string '" << s << "': " << atoi(s) << endl;
+
     s = "223ab";
-    cout<< "Integer value of string '" << s << "': " << atoi(s) << endl; 
+    cout << "Integer value of string '" << s << "': " << atoi(s) << endl;
 
     s = "ab23ab";
-    cout<< "Integer value of string '" << s << "': " << atoi(s) << endl; 
+    cout << "Integer value of string '" << s << "': " << atoi(s) << endl;
 
     s = "-1";
-    cout<< "Integer value of string '" << s << "': " << atoi(s) << endl; 
+    cout << "Integer value of string '" << s << "': " << atoi(s) << endl;
 
     return 0;
 }
