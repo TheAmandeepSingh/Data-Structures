@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# JSON - only using C++
+*.json
