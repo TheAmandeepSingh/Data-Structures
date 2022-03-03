@@ -33,10 +33,8 @@ string &getSmallestLexicographicalWord(string &x, string &y)
         {
             return y;
         }
-        else
-        {
-            return x;
-        }
+
+        return x;
     }
     return x;
 }
