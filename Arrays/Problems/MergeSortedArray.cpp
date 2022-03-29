@@ -1,5 +1,5 @@
 /**
- * Merge the sorted array
+ * Merge the two sorted array
  * a = [1 2 5 6]
  * b = [2 3 5 7]
  * 
@@ -12,42 +12,40 @@
 using namespace std;
 
 vector<int> mergeSortedVectors(const vector<int>& a, const vector<int>& b){
-	vector<int> nums;
+	vector<int> nums(a.size() + b.size(), 0);
 	
-	int i(0), j(0);
+	int i(0), j(0), k(0);
 	
 	while(i < a.size() && j < b.size()){
 		
 		if(a[i] < b[j])
 		{
-			nums.push_back(a[i]);
-			++i;
+			nums[k++] = a[i++];
 		} else if(a[i] > b[j]){
-			nums.push_back(b[j]);
-			++j;
+			nums[k++] = a[j++];
 		} else if(a[i] == b[j]){
-			nums.push_back(a[i]);
-			nums.push_back(a[i]);
-			++i;
-			++j;
+			nums[k++] = a[i++];
+			nums[k++] = a[j++];
 		}
 	}
-	
-	if(i != a.size()){
-		nums.insert(std::end(nums), std::begin(a) + i-1, std::end(a));
+
+	while(i < a.size()){
+		nums[k++] = a[i++];
 	}
 
-	if(j != b.size()){
-		nums.insert(std::end(nums), std::begin(b) + i-1, std::end(b));
+	while(j < b.size()){
+		nums[k++] = a[j++];
 	}
 	
 	return nums;
-	
 }
 
 int main(){
     vector<int> a{1, 2, 5, 6};
     vector<int> b{2, 3, 5, 7, 8};
     vector<int> nums = mergeSortedVectors(a, b);
+	for(auto n : nums){
+		cout << n << " ";
+	}
     return 0;
 }
