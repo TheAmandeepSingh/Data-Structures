@@ -44,7 +44,7 @@ There are three types of linked list:
  ### Singly Linked List
  A singly linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
 
- ![alt text](https://github.com/TheAmandeepSingh/Images/blob/main/DataStructures/LinkedList/Linkedlist.png?raw=true)
+ ![alt text](https://github.com/TheAmandeepSingh/Images/blob/316da643774ee07b3e2593d043cdc4ee776e4678/DataStructures/LinkedList/Linkedlist.png?raw=true)
 
  ### Doubly Linked List
  A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer, together with next pointer and data which are there in singly linked list.
