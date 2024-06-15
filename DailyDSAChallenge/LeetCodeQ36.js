@@ -1,6 +1,7 @@
 /**
  * LeetCode Q.36 - "Valid Sudoku"
  * Link: https://leetcode.com/problems/valid-sudoku/description/
+ * Twitter Article with detailed explanation: https://x.com/amandeepgini/status/1801289047714767254
  *
  * Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
  *          (a) Each row must contain the digits 1-9 without repetition.
