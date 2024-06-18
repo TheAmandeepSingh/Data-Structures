@@ -44,7 +44,6 @@ function replaceWords(dictionary, sentence) {
 /**
  * Using Trie
  */
-}
 class TrieNode {
     constructor() {
         this.children = {};
