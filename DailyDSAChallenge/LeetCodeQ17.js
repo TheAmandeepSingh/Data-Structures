@@ -1,4 +1,7 @@
 /**
+ * LeetCode Q.17 - "Letter Combinations of a Phone Number"
+ * Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+ * Twitter Article with detailed explanation: https://x.com/compose/articles/edit/1803839835230105600
  * Problem Statement
  * Given a string containing digits from 2-9 inclusive, you need to return all possible letter combinations that the number could represent. The mapping of digits to letters is similar to those on a telephone keypad. The task is to generate all combinations of these letters for the provided digits.
  * Mapping of Digits to Letters
