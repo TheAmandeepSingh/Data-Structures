@@ -58,8 +58,8 @@ function reverseInteger(n) {
     while(n !== 0) {
         const digit = n % 10;
         
-        if(reversed > INT_MAX || (reversed === INT_MAX && digit > 7)) return 0;
-        if(reversed < INT_MIN || (reversed === INT_MIN && digit < -8)) return 0;
+        if(reversed > INT_MAX/10 || (reversed === INT_MAX && digit > 7)) return 0;
+        if(reversed < INT_MIN/10 || (reversed === INT_MIN && digit < -8)) return 0;
 
         reversed = reversed * 10 + digit;
         n = n > 0 ? Math.floor(n/10) : Math.ceil(n/10);
